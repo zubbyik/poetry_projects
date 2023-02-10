@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "selenium-projects"
+version = "0.1.0"
+description = "Starter Python Selenium Project"
+authors = ["zubby--samsung <zubbyik@gmail.com>"]
+readme = "README.md"
+packages = [{include = "selenium_projects"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.8.0"
+pytest = "^7.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
