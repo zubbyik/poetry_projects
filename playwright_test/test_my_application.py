@@ -59,6 +59,9 @@ def test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_in
     expect(page.locator("form div").filter(has_text="You have requested to access a critical Administrator function in OrangeHRM and ")).to_have_text('You have requested to access a critical Administrator function in OrangeHRM and are required to validate your credentials below')
     content = page.locator("form div").filter(has_text="You have requested to access a critical Administrator function in OrangeHRM and ").text_content()
     print("\n Hello Ikem "+content)
+    with open('result.txt', "w") as result:
+        result.write(content)
+        result.close()
     expect(page.get_by_label('username')).not_to_be_visible()
     expect(page.get_by_label('username')).not_to_be_visible()
     page.goto("http://65.21.1.10:9099/web/index.php/directory/viewDirectory")
