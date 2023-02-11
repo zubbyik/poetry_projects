@@ -1,3 +1,4 @@
+*.un~
 playwright-test/*.json
 *.zip
 *.json
