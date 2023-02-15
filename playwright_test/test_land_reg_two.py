@@ -46,5 +46,5 @@ def test_land_reg_two(page: Page):
         except Exception as e:
             print("Link not found due to " + e.__str__())
             page.goto(url)
-    print(titles)
+    print(company_numbers)
     page.close()
