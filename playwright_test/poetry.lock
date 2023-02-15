@@ -466,6 +466,18 @@ pytest-base-url = "*"
 python-slugify = "*"
 
 [[package]]
+name = "python-decouple"
+version = "3.7"
+description = "Strict separation of settings from code."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "python-decouple-3.7.tar.gz", hash = "sha256:e88a8d6bdf3b07d471a854099e455e20a6fa7a4d6ecf8631b250e3db654336e6"},
+    {file = "python_decouple-3.7-py3-none-any.whl", hash = "sha256:1596dad2670cca5b1f87d087d9adb6a1958c590df346b85d4b19a9d6f0d52cef"},
+]
+
+[[package]]
 name = "python-slugify"
 version = "8.0.0"
 description = "A Python slugify application that also handles Unicode"
@@ -573,4 +585,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4a00fde887fa6b9ea32bc1c2a384f6ae37d6771a9b238980eea425cb85faf309"
+content-hash = "5b166a2a078112519ecdf9941fa9e9481189f2b0378f07bcd1dd8ab41122730c"
