@@ -63,5 +63,4 @@ def test_land_reg_two(page: Page):
                 write_companies.write(item)
             else:
                 write_companies.write(item+", ")
-    print(write_companies)
     page.close()
