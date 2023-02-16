@@ -59,7 +59,7 @@ def test_land_reg_two(page: Page):
             page.goto(url)
     with open('companies.txt', 'w') as write_companies:
         for item in company_numbers:
-            if (comp_number[:-1]):
+            if (comp_number[-1:]):
                 write_companies.write(item)
             else:
                 write_companies.write(item+", ")
