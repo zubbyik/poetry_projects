@@ -1,0 +1,19 @@
+language: python
+python:
+  - 3.10
+install:
+  - python3 -m pip install --user pipx
+  - python3 -m pipx ensurepath
+  - pipx install poetry
+  - poetry install
+script:
+  - poetry shell
+  - poetry run pytest -r P -v test_land_reg_two.py
+after_success:
+  - coveralls
+notifications:
+  email:
+    recipients:
+      - zubbyik@gmail.com
+    on_success: never
+    on_failure: always
