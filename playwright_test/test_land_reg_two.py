@@ -57,9 +57,10 @@ def test_land_reg_two(page: Page):
         except Exception as e:
             print("Link not found due to " + e.__str__())
             page.goto(url)
+ 
     with open('companies.txt', 'w') as write_companies:
         for item in company_numbers:
-            if (comp_number[-1:]):
+            if (item[-1:]):
                 write_companies.write(item)
             else:
                 write_companies.write(item+", ")
